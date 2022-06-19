@@ -27,7 +27,7 @@ public class Output : MonoBehaviour
 
     public Output()
     {
-        IMG_PATH = "D:\\UnityProject\\RayTrace\\Assets\\pictures\\test8.PNG";
+        IMG_PATH = "D:\\UnityProject\\RayTrace\\Assets\\pictures\\test10.PNG";
         WIDTH = 200;
         HEIGHT = 100;
         lowLeftCorner = new Vector3(-2, -1, -1);
@@ -330,7 +330,7 @@ public class Output : MonoBehaviour
         hitableList.list.Add(new Sphere(new Vector3(0, 0, -1), 0.5f, new Lambertian(new Color(0.8f, 0.3f, 0.3f))));
         hitableList.list.Add(new Sphere(new Vector3(0, -100.5f, -1), 100f, new Lambertian(new Color(0.8f, 0.8f, 0.0f))));
         hitableList.list.Add(new Sphere(new Vector3(1, 0, -1), 0.5f, new Metal(new Color(0.8f, 0.6f, 0.2f))));
-        hitableList.list.Add(new Sphere(new Vector3(-1, 0, -1), 0.5f, new Metal(new Color(0.8f, 0.8f, 0.8f))));
+        hitableList.list.Add(new Sphere(new Vector3(-1, 0, -1), 0.5f, new Dielectirc(2.7f)));
         Color[] colors = new Color[l];
 
         for (int j = height - 1; j >= 0; j--)
